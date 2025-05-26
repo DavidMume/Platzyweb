@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PlatzyWebClean")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97af0f0801e478703cea406388a593be8f21c961")]
 [assembly: System.Reflection.AssemblyProductAttribute("PlatzyWebClean")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PlatzyWebClean")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -26,3 +26,4 @@ C:\Users\David.Munoz\OneDrive - Calvary Christian College\Documents\Python Scrip
 C:\Users\David.Munoz\OneDrive - Calvary Christian College\Documents\Python Scripts\Platzy\PlatzyWebClean\obj\Debug\net8.0\PlatzyWebClean.pdb
 C:\Users\David.Munoz\OneDrive - Calvary Christian College\Documents\Python Scripts\Platzy\PlatzyWebClean\obj\Debug\net8.0\PlatzyWebClean.genruntimeconfig.cache
 C:\Users\David.Munoz\OneDrive - Calvary Christian College\Documents\Python Scripts\Platzy\PlatzyWebClean\obj\Debug\net8.0\ref\PlatzyWebClean.dll
+C:\Users\David.Munoz\OneDrive - Calvary Christian College\Documents\Python Scripts\Platzy\PlatzyWebClean\obj\Debug\net8.0\PlatzyWebClean.sourcelink.json
