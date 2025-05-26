@@ -1,0 +1,36 @@
+name: Build and deploy .NET app to Azure Web App - PlatzyWeb
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore PlatzyWebClean.csproj
+
+    - name: Build app
+      run: dotnet build PlatzyWebClean.csproj --configuration Release --no-restore
+
+    - name: Publish app
+      run: dotnet publish PlatzyWebClean.csproj --configuration Release --output ./publish --no-build
+
+    - name: Deploy to Azure Web App
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: PlatzyWeb  # ← Este debe ser el NOMBRE EXACTO de tu Web App en Azure
+        slot-name: Production
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
+        package: ./publish

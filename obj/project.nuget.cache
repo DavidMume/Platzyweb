@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "E6LQYr0Y0lQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\David.Munoz\\OneDrive - Calvary Christian College\\Documents\\Python Scripts\\Platzy\\PlatzyWebClean\\PlatzyWebClean.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\David.Munoz\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.15\\microsoft.netcore.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\David.Munoz\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.15\\microsoft.windowsdesktop.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\David.Munoz\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.15\\microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\David.Munoz\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.15\\microsoft.netcore.app.host.win-x64.8.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}
