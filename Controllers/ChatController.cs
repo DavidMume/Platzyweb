@@ -21,7 +21,7 @@ namespace PlatzyWebClean.Controllers
         public async Task<IActionResult> Post([FromBody] ChatRequest request)
         {
             var endpoint = "https://calvarygtp1.openai.azure.com/openai/deployments/CalvaryGTP1/chat/completions?api-version=2024-02-15-preview";
-            OPENAI_API_KEY = Environment.GetEnvironmentVariable("AZURE_OPENAI_KEY");
+            var apiKey = Environment.GetEnvironmentVariable("AZURE_OPENAI_KEY");
 
             var body = new
             {
@@ -45,6 +45,6 @@ namespace PlatzyWebClean.Controllers
 
     public class ChatRequest
     {
-        public string Prompt { get; set; }
+        public string? Prompt { get; set; }
     }
 }
