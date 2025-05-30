@@ -4,5 +4,49 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome to Calvary GTP 1</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Interact with our educational chatbot below.</p>
 </div>
+
+<div class="container mt-4">
+    <div class="card shadow p-4">
+        <h4 class="mb-3">📚 Ask Calvary GTP 1</h4>
+        
+        <div class="form-group">
+            <label for="chatInput">Your Question</label>
+            <textarea class="form-control mb-3" id="chatInput" rows="4" placeholder="E.g. How do I simplify fractions?"></textarea>
+        </div>
+
+        <button class="btn btn-success" onclick="sendChat()">🎯 Send</button>
+
+        <div class="mt-4">
+            <label class="fw-bold">AI Response</label>
+            <div id="chatResponse" class="alert alert-info" style="min-height: 120px;"></div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script>
+        async function sendChat() {
+            const input = document.getElementById('chatInput').value;
+            const responseDiv = document.getElementById('chatResponse');
+
+            try {
+                const res = await fetch('/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ query: input })
+                });
+
+                const data = await res.json();
+                responseDiv.innerText = data.response || 'No response received.';
+            } catch (error) {
+                responseDiv.innerText = 'An error occurred while contacting the chatbot.';
+                console.error(error);
+            }
+        }
+    </script>
+}
